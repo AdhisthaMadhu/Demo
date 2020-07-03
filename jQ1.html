@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+    <script> 
+        $(document).ready(function() { 
+            $("button").click(function() { 
+                $("#gfg").toggle(); 
+            }); 
+        }); 
+    </script>
+<title>jQuery Double Click</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+</script> 
+    <style> 
+        #gfg { 
+            color: pink; 
+            border: 5px solid black; 
+            width: 200px; 
+            text-align: center; 
+        } 
+    </style> 
+	<style> 
+.divClass1
+{
+    padding:15px;
+    text-align:center;
+    background-color:orange;
+    border:solid 1px;
+}
+.divClass2
+{
+    padding:25px;
+    text-align:center;
+    background-color:blue;
+    border:solid 1px;
+}
+    </style> 
+</head> 
+  
+<body> 
+  
+    <div id="gfg">HELLO</div> 
+  
+    <button>Click to hide() and show() the above div</button> 
+	
+     <div class="divClass1">JournalDev</div>
+  
+</body> 
+  
+</html> 
